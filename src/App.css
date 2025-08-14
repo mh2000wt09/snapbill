@@ -1,0 +1,78 @@
+.app-container {
+  padding-bottom: 50px;
+}
+
+.invoice-preview-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  background-color: #f8f8f8;
+}
+
+.invoice-info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* 响应式设计 - 移动设备 */
+@media (max-width: 768px) {
+  .invoice-header {
+    flex-direction: column;
+  }
+  
+  .invoice-info-section {
+    flex-direction: column;
+  }
+  
+  .invoice-info-section > Box {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f2f2f2;
+}
+
+.invoice-totals {
+  margin-left: auto;
+  width: 300px;
+}
+
+.invoice-total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.invoice-total-row.final {
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 5px;
+}
